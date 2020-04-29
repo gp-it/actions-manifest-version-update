@@ -1,22 +1,23 @@
 const core = require('@actions/core');
-const wait = require('./wait');
-
 
 // most @actions toolkit packages have async methods
 async function run() {
-  try { 
-    const ms = core.getInput('milliseconds');
-    console.log(`Waiting ${ms} milliseconds ...`)
+  try {
+    const path = 'manifest.json';
+    const fs = require('fs');
+    const manifest = require(path);
+    console.log(manifest.version);
+    const levels = manifest.version.split('.');
+    levels[2] = parseInt(levels[2]) + 1;
+    manifest.version = levels.join('.');
+    fs.writeFile(path, JSON.stringify(manifest), err => {
+      if (err) console.log(err);
+      console.log(manifest.version);
+    });
 
-    core.debug((new Date()).toTimeString())
-    await wait(parseInt(ms));
-    core.debug((new Date()).toTimeString())
-
-    core.setOutput('time', new Date().toTimeString());
-  } 
+  }
   catch (error) {
     core.setFailed(error.message);
   }
 }
-
 run()

@@ -1,7 +1,7 @@
 {
-  "name": "javascript-action",
+  "name": "actions-manifest-version-update",
   "version": "1.0.0",
-  "description": "JavaScript Action Template",
+  "description": "Update manifest version",
   "main": "index.js",
   "scripts": {
     "lint": "eslint index.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/actions/javascript-action.git"
+    "url": "git+https://github.com/Geoffrey-Pliez/actions-manifest-version-update.git"
   },
   "keywords": [
     "GitHub",
@@ -20,9 +20,9 @@
   "author": "GitHub",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/actions/javascript-action/issues"
+    "url": "https://github.com/Geoffrey-Pliez/actions-manifest-version-update/issues"
   },
-  "homepage": "https://github.com/actions/javascript-action#readme",
+  "homepage": "https://github.com/Geoffrey-Pliez/actions-manifest-version-update#readme",
   "dependencies": {
     "@actions/core": "^1.1.1"
   },
