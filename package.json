@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Update manifest version",
   "main": "index.js",
+  "bin": {
+    "updateManifest": "index.js"
+  },
   "scripts": {
     "lint": "eslint index.js",
     "package": "ncc build index.js -o dist",
