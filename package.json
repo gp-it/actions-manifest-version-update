@@ -1,5 +1,5 @@
 {
-  "name": "actions-manifest-version-update",
+  "name": "@gp-it/actions-manifest-version-update",
   "version": "1.0.0",
   "description": "Update manifest version",
   "main": "index.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Geoffrey-Pliez/actions-manifest-version-update.git"
+    "url": "git+https://github.com/gp-it/actions-manifest-version-update.git"
   },
   "keywords": [
     "GitHub",
@@ -20,9 +20,9 @@
   "author": "GitHub",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Geoffrey-Pliez/actions-manifest-version-update/issues"
+    "url": "https://github.com/gp-it/actions-manifest-version-update/issues"
   },
-  "homepage": "https://github.com/Geoffrey-Pliez/actions-manifest-version-update#readme",
+  "homepage": "https://github.com/gp-it/actions-manifest-version-update#readme",
   "dependencies": {
     "@actions/core": "^1.1.1"
   },
@@ -30,5 +30,6 @@
     "@zeit/ncc": "^0.20.5",
     "eslint": "^6.3.0",
     "jest": "^24.9.0"
-  }
+  },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
 }
