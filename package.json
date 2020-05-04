@@ -1,6 +1,6 @@
 {
   "name": "@gp-it/actions-manifest-version-update",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Update manifest version",
   "main": "index.js",
   "bin": {
@@ -27,12 +27,14 @@
   },
   "homepage": "https://github.com/gp-it/actions-manifest-version-update#readme",
   "dependencies": {
-    "@actions/core": "^1.1.1"
+    "@actions/core": "^1.2.4"
   },
   "devDependencies": {
     "@zeit/ncc": "^0.20.5",
-    "eslint": "^6.3.0",
-    "jest": "^24.9.0"
+    "eslint": "^6.8.0",
+    "jest": "^25.5.4"
   },
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
 }
